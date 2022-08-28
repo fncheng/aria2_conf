@@ -12,7 +12,7 @@
 
 **1**. 打开aria2.conf，复制以下内容到该文件：
 
-```bash
+```properties
 ## '#'开头为注释内容, 选项都有相应的注释说明, 根据需要修改 ##
 ## 被注释的选项填写的是默认值, 建议在需要修改时再取消注释  ##
 
@@ -167,7 +167,7 @@ parameterized-uri=true
 
 **2**. 编辑HideRun.vbs，并复制以下内容，注意修改D:\App\Aria2\为你的aria2安装路径： 
 
-```bash
+```vbscript
 CreateObject("WScript.Shell").Run "D:\App\Aria2\aria2c.exe --conf-path=aria2.conf",0
 ```
 
